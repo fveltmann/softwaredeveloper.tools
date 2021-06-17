@@ -1,0 +1,29 @@
+<h4>Aspect-Ratio</h4>
+<div class="row">
+  <div class="col-5 row">
+    <div class="col-12 form-group">
+      <label for="ratioWidth">W1</label>
+      <input id="ratioWidth" class="form-control" type="number" [placeholder]="'Width'" [(ngModel)]="w1"
+        (input)="setW1(h2)">
+    </div>
+    <div class="col-12 form-group">
+      <label for="ratioHeight">H1</label>
+      <input id="ratioHeight" class="form-control" type="number" [placeholder]="'Height'" [(ngModel)]="h1"
+        (input)="setH1(w2)">
+    </div>
+  </div>
+  <div class="col-2 equals">
+    <p>=</p>
+  </div>
+  <div class="col-5 row">
+    <div class="col-12 form-group">
+      <label for="width">W2</label>
+      <input id="width" class="form-control" type="number" [placeholder]="'Width'" [(ngModel)]="w2" (input)="setH1(w2)">
+    </div>
+    <div class="col-12 form-group">
+      <label for="height">H2</label>
+      <input id="height" class="form-control" type="number" [placeholder]="'Height'" [(ngModel)]="h2"
+        (input)="setW1(h2)">
+    </div>
+  </div>
+</div>
