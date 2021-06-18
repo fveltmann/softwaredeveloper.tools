@@ -1,0 +1,20 @@
+<h4>XML/JS/JSON</h4>
+<div class="row">
+  <div class="col-5 row">
+    <div class="col-12 form-group">
+      <label for="xml">XML</label>
+      <textarea id="xml" cols="30" rows="10" [(ngModel)]="xml"
+        (input)="json = converterService.xmlToJson(xml)"></textarea>
+    </div>
+  </div>
+  <div class="col-2 equals">
+    <p>-></p>
+  </div>
+  <div class="col-5 row">
+    <div class="col-12 form-group">
+      <label for="js-json">JS/JSON</label>
+      <textarea id="js-json" cols="30" rows="10" [(ngModel)]="json"
+        (input)="xml = converterService.jsonToXml(json)"></textarea>
+    </div>
+  </div>
+</div>
