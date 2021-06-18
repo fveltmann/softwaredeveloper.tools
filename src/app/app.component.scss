@@ -15,9 +15,13 @@
 
     ul {
       list-style: none;
+      display: flex;
 
       li {
         cursor: pointer;
+        &:not(:first-child) {
+          margin-left: 1em;
+        }
       }
     }
   }
