@@ -17,7 +17,35 @@ const routes: Routes = [
     path: 'minify-css',
     component: MinifierComponent,
     data: {
-      type: 'css'
+      mode: 'css'
+    }
+  },
+  {
+    path: 'minify-html',
+    component: MinifierComponent,
+    data: {
+      mode: 'html'
+    }
+  },
+  {
+    path: 'minify-json',
+    component: MinifierComponent,
+    data: {
+      mode: 'json'
+    }
+  },
+  {
+    path: 'minify-js',
+    component: MinifierComponent,
+    data: {
+      mode: 'js'
+    }
+  },
+  {
+    path: 'minify-xml',
+    component: MinifierComponent,
+    data: {
+      mode: 'xml'
     }
   }
 ];

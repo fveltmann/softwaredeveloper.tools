@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MinifyService } from './minify.service';
+import { MinifierService } from './minifier.service';
 
-describe('MinifyService', () => {
-  let service: MinifyService;
+describe('MinifierService', () => {
+  let service: MinifierService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MinifyService);
+    service = TestBed.inject(MinifierService);
   });
 
   it('should be created', () => {
